@@ -1,0 +1,329 @@
+:root {
+  --clr-blue: #0075ff;
+  --clr-blue-alt: #0d69d5;
+  --clr-orange: #f59e0b;
+  --clr-green: #22c55e;
+  --clr-red: #f44336;
+  --clr-grey: #888;
+}
+
+/* Start Layout */
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-1 {
+  flex: 1;
+}
+.grid {
+  display: grid;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-20 {
+  gap: 1.25rem;
+}
+/* End Layout */
+
+/* Start Spacing */
+.p-10 {
+  padding: 0.625rem;
+}
+.px-10 {
+  padding: 0 0.625rem;
+}
+.py-10 {
+  padding: 0.625rem 0;
+}
+.pt-10 {
+  padding-top: 0.625rem;
+}
+.pr-10 {
+  padding-right: 0.625rem;
+}
+.pb-10 {
+  padding-bottom: 0.625rem;
+}
+.pl-10 {
+  padding-left: 0.625rem;
+}
+
+.p-15 {
+  padding: 0.9375rem;
+}
+.px-15 {
+  padding: 0 0.9375rem;
+}
+.py-15 {
+  padding: 0.9375rem 0;
+}
+.pt-15 {
+  padding-top: 0.9375rem;
+}
+.pr-15 {
+  padding-right: 0.9375rem;
+}
+.pb-15 {
+  padding-bottom: 0.9375rem;
+}
+.pl-15 {
+  padding-left: 0.9375rem;
+}
+
+.p-20 {
+  padding: 1.25rem;
+}
+.px-20 {
+  padding: 0 1.25rem;
+}
+.py-20 {
+  padding: 1.25rem 0;
+}
+.pt-20 {
+  padding-top: 1.25rem;
+}
+.pr-20 {
+  padding-right: 1.25rem;
+}
+.pb-20 {
+  padding-bottom: 1.25rem;
+}
+.pl-20 {
+  padding-left: 1.25rem;
+}
+
+.m-5 {
+  margin: 0.3125rem;
+}
+.mx-5 {
+  margin: 0 0.3125rem;
+}
+.my-5 {
+  margin: 0.3125rem 0;
+}
+.mt-5 {
+  margin-top: 0.3125rem;
+}
+.mr-5 {
+  margin-right: 0.3125rem;
+}
+.mb-5 {
+  margin-bottom: 0.3125rem;
+}
+.ml-5 {
+  margin-left: 0.3125rem;
+}
+
+.m-10 {
+  margin: 0.625rem;
+}
+.mx-10 {
+  margin: 0 0.625rem;
+}
+.my-10 {
+  margin: 0.625rem 0;
+}
+.mt-10 {
+  margin-top: 0.625rem;
+}
+.mr-10 {
+  margin-right: 0.625rem;
+}
+.mb-10 {
+  margin-bottom: 0.625rem;
+}
+.ml-10 {
+  margin-left: 0.625rem;
+}
+
+.m-15 {
+  margin: 0.9375rem;
+}
+.mx-15 {
+  margin: 0 0.9375rem;
+}
+.my-15 {
+  margin: 0.9375rem 0;
+}
+.mt-15 {
+  margin-top: 0.9375rem;
+}
+.mr-15 {
+  margin-right: 0.9375rem;
+}
+.mb-15 {
+  margin-bottom: 0.9375rem;
+}
+.ml-15 {
+  margin-left: 0.9375rem;
+}
+
+.m-20 {
+  margin: 1.25rem;
+}
+.mx-20 {
+  margin: 0 1.25rem;
+}
+.my-20 {
+  margin: 1.25rem 0;
+}
+.mt-20 {
+  margin-top: 1.25rem;
+}
+.mr-20 {
+  margin-right: 1.25rem;
+}
+.mb-20 {
+  margin-bottom: 1.25rem;
+}
+.ml-20 {
+  margin-left: 1.25rem;
+}
+
+.m-25 {
+  margin: 1.5625rem;
+}
+.mx-25 {
+  margin: 0 1.5625rem;
+}
+.my-25 {
+  margin: 1.5625rem 0;
+}
+.mt-25 {
+  margin-top: 1.5625rem;
+}
+.mr-25 {
+  margin-right: 1.5625rem;
+}
+.mb-25 {
+  margin-bottom: 1.5625rem;
+}
+.ml-25 {
+  margin-left: 1.5625rem;
+}
+/* End Spacing */
+
+/* Start Colors */
+.text-black {
+  color: #000;
+}
+.text-white {
+  color: #fff;
+}
+.text-grey {
+  color: var(--clr-grey);
+}
+.text-red {
+  color: var(--clr-red);
+}
+.text-green {
+  color: var(--clr-green);
+}
+.text-blue {
+  color: var(--clr-blue);
+}
+.text-orange {
+  color: var(--clr-orange);
+}
+
+.bg-white {
+  background-color: #fff;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.bg-red {
+  background-color: var(--clr-red);
+}
+.bg-green {
+  background-color: var(--clr-green);
+}
+.bg-blue {
+  background-color: var(--clr-blue);
+}
+.bg-orange {
+  background-color: var(--clr-orange);
+}
+/* End Colors */
+
+/* Start Position */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+/* End Position */
+
+/* Start Typography */
+.text-center {
+  text-align: center;
+}
+
+.fs-13 {
+  font-size: 0.8125rem;
+}
+.fs-14 {
+  font-size: 0.875rem;
+}
+.fs-15 {
+  font-size: 0.9375rem;
+}
+.fs-25 {
+  font-size: 1.5625rem;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+/* End Typography */
+
+/* Start Border */
+.rounded-6 {
+  border-radius: 0.375rem;
+}
+.rounded-10 {
+  border-radius: 0.625rem;
+}
+.rounded-full {
+  border-radius: 50%;
+}
+
+.border-ccc {
+  border: 1px solid #ccc;
+}
+.border-eee {
+  border: 1px solid #eee;
+}
+/* End Border */
+
+/* Start Width + Height */
+.w-fit {
+  width: fit-content;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+/* End Width + Height */
+
+/* Start Compound Classes */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* End Compound Classes */
