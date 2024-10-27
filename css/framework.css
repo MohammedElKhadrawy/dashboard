@@ -26,8 +26,19 @@
 .justify-between {
   justify-content: space-between;
 }
-.gap-20 {
-  gap: 1.25rem;
+.gap-fluid {
+  gap: 0.625rem;
+}
+.mobile-hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .gap-fluid {
+    gap: 1.25rem;
+  }
+  .mobile-hidden {
+    display: initial;
+  }
 }
 /* End Layout */
 
@@ -264,6 +275,14 @@
 /* Start Typography */
 .text-center {
   text-align: center;
+}
+.mobile-text-center {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .mobile-text-center {
+    text-align: initial;
+  }
 }
 
 .fs-13 {

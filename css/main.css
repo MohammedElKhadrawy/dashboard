@@ -7,7 +7,8 @@
 }
 
 html {
-  line-height: 1.15; /* normalize */
+  /* normalize */
+  /* line-height: 1.15;  */
   scroll-behavior: smooth;
 }
 
@@ -30,3 +31,69 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.page {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+}
+
+/* Start Sidebar */
+.sidebar {
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  transition: background-color 0.3s;
+}
+
+.sidebar__link:hover,
+.sidebar__link.active {
+  background-color: #f6f6f6;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 225px;
+    padding: 1.25rem 1.25rem 0;
+  }
+
+  .sidebar h3 {
+    font-size: 1.1875rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .sidebar h3::before,
+  .sidebar h3::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+  }
+
+  .sidebar h3::before {
+    width: 80px;
+    height: 2px;
+  }
+
+  .sidebar h3::after {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .sidebar__link {
+    width: 100%;
+    font-weight: 500;
+  }
+}
+/* End Sidebar */
