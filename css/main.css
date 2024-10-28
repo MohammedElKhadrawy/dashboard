@@ -139,3 +139,38 @@ img {
   right: -5px;
 }
 /* End Main Header */
+
+/* Start Main Title */
+.main-content .main-title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.main-content .main-title::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-image: linear-gradient(to right, #000 33.33%, #fff 33.33%);
+  left: 0;
+  bottom: -10px;
+}
+/* End Main Title */
+
+/* Start Welcome Widget */
+.welcome {
+  overflow: hidden;
+}
+
+.welcome .intro {
+  padding-bottom: 2.875rem;
+}
+
+.welcome .avatar {
+  margin: -32.5px auto 0; /* half of its height */
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ddd;
+}
+/* End Welcome Widget */
