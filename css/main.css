@@ -395,3 +395,30 @@ img {
   }
 }
 /* End Last Project Progress Widget */
+
+/* Start Reminders Widget */
+.reminders .reminders__list {
+  gap: 1rem;
+}
+
+.reminders__list li .bullet {
+  width: 15px;
+  height: 15px;
+}
+
+.reminders__list li .blue {
+  border-left: 2px solid var(--clr-blue);
+}
+
+.reminders__list li .green {
+  border-left: 2px solid var(--clr-green);
+}
+
+.reminders__list li .orange {
+  border-left: 2px solid var(--clr-orange);
+}
+
+.reminders__list li .red {
+  border-left: 2px solid var(--clr-red);
+}
+/* End Reminders Widget */
