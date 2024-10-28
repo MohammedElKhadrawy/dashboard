@@ -217,10 +217,6 @@ img {
   background-color: rgb(34 197 94 / 20%);
 }
 
-.target__details .progressbar__fill {
-  position: relative;
-}
-
 .target__details .progressbar__fill::before,
 .target__details .progressbar__fill::after {
   position: absolute;
@@ -269,3 +265,11 @@ img {
 }
 
 /* End Targets Widget */
+
+/* Start Tickets Widget */
+@media (min-width: 768px) {
+  .tickets .box {
+    width: calc(50% - 10px); /* half of the gap to fit 2 boxes in each row */
+  }
+}
+/* End Tickets Widget */
