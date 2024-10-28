@@ -311,3 +311,30 @@ img {
   }
 }
 /* End Latest News Widget */
+
+/* Start Latest Tasks Widget */
+.latest-tasks .task-row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.latest-tasks .task-row.done > * {
+  opacity: 0.3;
+}
+
+.latest-tasks .task-row.done .task__info {
+  text-decoration: line-through;
+}
+
+.latest-tasks .task-row .task__info h3 {
+  font-size: 1rem;
+}
+
+.latest-tasks .task-row:not(.done) .delete {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.latest-tasks .task-row:not(.done) .delete:hover {
+  color: var(--clr-red);
+}
+/* End Latest Tasks Widget */
