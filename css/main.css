@@ -174,3 +174,20 @@ img {
   box-shadow: 0 0 5px #ddd;
 }
 /* End Welcome Widget */
+
+/* Start Quick Draft Widget */
+.quick-draft form > * {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+.quick-draft form textarea {
+  resize: none;
+  height: 180px;
+}
+
+.quick-draft form .save {
+  justify-self: end;
+}
+/* End Quick Draft Widget */
