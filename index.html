@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -24,7 +24,10 @@
         <nav>
           <ul class="fs-14">
             <li>
-              <a class="active sidebar__link p-10 mb-5 rounded-6" href="index.html">
+              <a
+                class="active sidebar__link p-10 mb-5 rounded-6"
+                href="index.html"
+              >
                 <i class="fa-solid fa-house fa-fw"></i
                 ><span class="mobile-hidden">Dashboard</span>
               </a>
@@ -74,7 +77,33 @@
           </ul>
         </nav>
       </aside>
-      <main>main content</main>
+      <main class="flex-1">
+        <header class="main-header bg-white py-15">
+          <div class="main-container flex-between">
+            <div class="header__search relative">
+              <input
+                type="search"
+                placeholder="Type A Keyword"
+                class="py-10 pr-10 border-ccc rounded-10"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass search__icon absolute text-grey fs-14"
+              ></i>
+            </div>
+            <div class="header__icons flex items-center">
+              <span class="icons__bell relative">
+                <i class="fa-regular fa-bell fa-lg"></i>
+              </span>
+              <img
+                src="assets/avatar.webp"
+                alt="current user avatar"
+                width="35"
+                class="ml-15"
+              />
+            </div>
+          </div>
+        </header>
+      </main>
     </div>
   </body>
 </html>
