@@ -349,3 +349,49 @@ img {
   font-size: 1rem;
 }
 /* End Latest Uploads Widget */
+
+/* Start Last Project Progress Widget */
+.last-project .project__steps {
+  gap: 1.5625rem;
+  position: relative;
+  z-index: 1;
+}
+
+.last-project .project__steps::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--clr-blue);
+  left: 11px; /* half of the circle's width (12px) - half of its own width (1px) */
+  z-index: -1;
+}
+
+.last-project .project__steps li::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  outline: 2px solid var(--clr-blue);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.last-project .project__steps li.done::before {
+  background-color: var(--clr-blue);
+}
+
+.last-project .project__steps li.in-progress::before {
+  animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    background-color: var(--clr-blue);
+  }
+  to {
+    background-color: #fff;
+  }
+}
+/* End Last Project Progress Widget */
