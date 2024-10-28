@@ -338,3 +338,14 @@ img {
   color: var(--clr-red);
 }
 /* End Latest Tasks Widget */
+
+/* Start Latest Uploads Widget */
+.latest-uploads .upload-row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.latest-uploads .upload-row .upload__info h3 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+/* End Latest Uploads Widget */
