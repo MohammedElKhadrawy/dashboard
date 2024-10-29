@@ -422,3 +422,16 @@ img {
   border-left: 2px solid var(--clr-red);
 }
 /* End Reminders Widget */
+
+/* Start Latest Post Widget */
+.latest-post .post__head h3 {
+  font-size: 1rem;
+}
+
+.latest-post .post__content {
+  line-height: 1.8;
+  text-transform: capitalize;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+/* End Latest Post Widget */
