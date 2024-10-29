@@ -435,3 +435,58 @@ img {
   border-bottom: 1px solid #eee;
 }
 /* End Latest Post Widget */
+
+/* Start Social Media Stats Widget */
+.social-stats .stats-container {
+  gap: 0.625rem;
+}
+
+.social-stats .stat-box .stat__icon {
+  width: 52px; /* same as parent's height after adding margins to the paragraph */
+  transition: transform 0.3s;
+}
+
+.social-stats .stat-box .stat__icon:hover {
+  transform: rotate(5deg);
+}
+
+.social-stats .twitter {
+  background-color: rgb(29 161 242 / 20%);
+  color: #1da1f2;
+}
+
+.social-stats .twitter .stat__icon,
+.social-stats .twitter a {
+  background-color: #1da1f2;
+}
+
+.social-stats .facebook {
+  background-color: rgb(24 119 242 / 20%);
+  color: #1877f2;
+}
+
+.social-stats .facebook .stat__icon,
+.social-stats .facebook a {
+  background-color: #1877f2;
+}
+
+.social-stats .youtube {
+  background-color: rgb(255 0 0 / 20%);
+  color: #ff0000;
+}
+
+.social-stats .youtube .stat__icon,
+.social-stats .youtube a {
+  background-color: #ff0000;
+}
+
+.social-stats .linkedin {
+  background-color: rgb(0 119 181 / 20%);
+  color: #0077b5;
+}
+
+.social-stats .linkedin .stat__icon,
+.social-stats .linkedin a {
+  background-color: #0077b5;
+}
+/* End Social Media Stats Widget */
