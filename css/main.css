@@ -220,6 +220,7 @@ main {
 
   .welcome .avatar {
     margin-left: 1.25rem; /* to match padding */
+    margin-right: 0;
   }
 
   .welcome .body {
