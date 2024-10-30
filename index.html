@@ -78,6 +78,7 @@
         </nav>
       </aside>
       <main class="flex-1">
+        <!-- Start Main Header -->
         <header class="main-header bg-white py-15">
           <div class="main-container flex-between">
             <div class="header__search relative">
@@ -103,6 +104,9 @@
             </div>
           </div>
         </header>
+        <!-- End Main Header -->
+
+        <!-- Start Main Content -->
         <section class="main-content py-20">
           <div class="main-container">
             <h1 class="main-title">Dashboard</h1>
@@ -110,10 +114,16 @@
               <!-- Start Welcome Widget -->
               <div class="welcome rounded-10 bg-white">
                 <div class="intro bg-eee px-20 pt-20">
-                  <div class="w-fit text-center">
+                  <div class="w-fit mobile-text-center">
                     <h2 class="mb-5">Welcome,</h2>
                     <span class="text-grey">Ethan</span>
                   </div>
+                  <img
+                    class="mobile-hidden"
+                    src="assets/welcome.webp"
+                    alt=""
+                    width="200"
+                  />
                 </div>
                 <img
                   src="assets/avatar.webp"
@@ -121,7 +131,7 @@
                   width="65"
                   class="avatar"
                 />
-                <div class="body py-20 border-eee text-center mt-20">
+                <div class="body py-20 text-center mt-20">
                   <div class="mb-20">
                     <span>Ethan Clarke</span>
                     <span class="block mt-10 fs-14 text-grey">Developer</span>
@@ -138,7 +148,7 @@
                 <div class="text-right p-20">
                   <a
                     href="profile.html"
-                    class="fs-14 btn-shape bg-blue text-white"
+                    class="visit fs-14 btn-shape bg-blue text-white"
                     >Profile</a
                   >
                 </div>
@@ -480,7 +490,7 @@
               <!-- End Latest Uploads Widget -->
 
               <!-- Start Last Project Progress Widget -->
-              <div class="last-project rounded-10 bg-white p-20">
+              <div class="last-project rounded-10 bg-white p-20 relative">
                 <h2 class="mb-20">Last Project Progress</h2>
                 <ul class="project__steps grid">
                   <li class="done flex items-center">Got The Project</li>
@@ -495,6 +505,12 @@
                     Finish The Project & Get Paid
                   </li>
                 </ul>
+                <img
+                  class="launch-icon mobile-hidden absolute"
+                  src="assets/project.webp"
+                  alt=""
+                  width="160"
+                />
               </div>
               <!-- End Last Project Progress Widget -->
 
@@ -540,14 +556,14 @@
               <div class="latest-post rounded-10 bg-white p-20">
                 <h2 class="mb-20">Latest Post</h2>
                 <div class="grid gap-20">
-                  <div class="flex items-center">
+                  <div class="post__head flex items-center">
                     <img
                       class="mr-15"
                       src="assets/avatar.webp"
                       alt="current user avatar"
                       width="48"
                     />
-                    <div class="post__head">
+                    <div>
                       <h3 class="mb-5">Ethan Clarke</h3>
                       <p class="fs-14 text-grey">About 3 Hours Ago</p>
                     </div>
@@ -823,6 +839,7 @@
             <!-- End Projects Widget -->
           </div>
         </section>
+        <!-- End Main Content -->
       </main>
     </div>
   </body>

@@ -1,11 +1,6 @@
-:root {
-  --clr-blue: #0075ff;
-  --clr-blue-alt: #0d69d5;
-  --clr-orange: #f59e0b;
-  --clr-green: #22c55e;
-  --clr-red: #f44336;
-  --clr-grey: #888;
-}
+/* Important note! */
+/* No need to redefine :root variables here since we've already done that in framework.css file */
+/* make sure this file is imported after the framework file */
 
 *,
 *::before,
@@ -39,6 +34,23 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-blue-alt);
 }
 
 .page {
@@ -165,10 +177,8 @@ main {
 /* End Main Title */
 
 /* Start Grid Wrapper */
-@media (min-width: 768px) {
-  .main-content .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-  }
+.main-content .wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 450px), 1fr));
 }
 /* End Grid Wrapper */
 
@@ -187,6 +197,41 @@ main {
   border-radius: 50%;
   box-shadow: 0 0 5px #ddd;
 }
+
+.welcome .body {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.welcome .visit {
+  transition: background-color 0.3s;
+}
+
+.welcome .visit:hover {
+  background-color: var(--clr-blue-alt);
+}
+
+@media (min-width: 768px) {
+  .welcome .intro {
+    padding-bottom: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .welcome .avatar {
+    margin-left: 1.25rem; /* to match padding */
+  }
+
+  .welcome .body {
+    display: flex;
+    padding: 1.25rem;
+  }
+
+  .welcome .body > div {
+    flex: 1;
+    margin: 0;
+  }
+}
 /* End Welcome Widget */
 
 /* Start Quick Draft Widget */
@@ -203,6 +248,12 @@ main {
 
 .quick-draft form .save {
   justify-self: end;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quick-draft form .save:hover {
+  background-color: var(--clr-blue-alt);
 }
 /* End Quick Draft Widget */
 
@@ -407,6 +458,12 @@ main {
   to {
     background-color: #fff;
   }
+}
+
+.last-project .launch-icon {
+  opacity: 0.1;
+  right: 0;
+  bottom: 0;
 }
 /* End Last Project Progress Widget */
 
