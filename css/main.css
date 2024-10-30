@@ -106,6 +106,12 @@ img {
 }
 /* End Sidebar */
 
+/* Start Main */
+main {
+  overflow-x: hidden; /* mandatory for table responsiveness! */
+}
+/* End Main */
+
 /* Start Main Header */
 .main-header .header__search input {
   width: 160px;
@@ -490,3 +496,49 @@ img {
   background-color: #0077b5;
 }
 /* End Social Media Stats Widget */
+
+/* Start Projects Widget */
+.projects {
+  margin-top: 0.625rem;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    margin-top: 1.25rem;
+  }
+}
+
+.projects .table-container {
+  overflow-x: auto;
+}
+
+.projects table {
+  width: max(100%, 1000px); /* grows to full and shrinks until min-width 1000px */
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.projects table th,
+.projects table td {
+  padding: 0.9375rem;
+  border: 1px solid #eee;
+}
+
+.projects table tbody tr {
+  transition: background-color 0.3s;
+}
+
+.projects table tbody tr:hover {
+  background-color: #faf7f7;
+}
+
+.projects table .team img {
+  display: initial;
+  border: 2px solid #fff;
+}
+
+.projects table .team img:not(:first-child) {
+  margin-left: -1.25rem;
+}
+/* End Projects Widget */
