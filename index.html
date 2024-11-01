@@ -82,10 +82,14 @@
         <header class="main-header bg-white py-15">
           <div class="main-container flex-between">
             <div class="header__search relative">
+              <label for="search-field" class="visually-hidden"
+                >Search for anything</label
+              >
               <input
                 type="search"
-                placeholder="Type A Keyword"
                 class="py-10 pr-10 border-ccc rounded-10"
+                id="search-field"
+                placeholder="Type A Keyword"
               />
               <i
                 class="fa-solid fa-magnifying-glass search__icon absolute text-grey fs-14"
@@ -162,15 +166,25 @@
                   Write A Draft For Your Ideas
                 </p>
                 <form class="grid gap-20">
+                  <label for="title-field" class="visually-hidden"
+                    >Idea Title</label
+                  >
                   <input
-                    class="bg-eee p-10 rounded-6"
                     type="text"
+                    class="bg-eee p-10 rounded-6"
+                    id="title-field"
                     placeholder="Title"
                   />
+
+                  <label for="thought-field" class="visually-hidden"
+                    >Your Thoughts for the Idea</label
+                  >
                   <textarea
                     class="bg-eee p-10 rounded-6"
+                    id="thought-field"
                     placeholder="Your Thought"
                   ></textarea>
+
                   <input
                     class="save btn-shape bg-blue text-white fs-14"
                     type="submit"
