@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page flex">
+      <aside class="sidebar bg-white px-10 pt-10">
+        <h3 class="relative fs-13 mb-15 text-center">Logo</h3>
+        <nav>
+          <ul class="fs-14">
+            <li>
+              <a class="sidebar__link p-10 mb-5 rounded-6" href="index.html">
+                <i class="fa-solid fa-house fa-fw"></i
+                ><span class="mobile-hidden">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="active sidebar__link p-10 mb-5 rounded-6"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i
+                ><span class="mobile-hidden">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link p-10 mb-5 rounded-6" href="profile.html">
+                <i class="fa-regular fa-circle-user fa-fw"></i
+                ><span class="mobile-hidden">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link p-10 mb-5 rounded-6" href="projects.html">
+                <i class="fa-solid fa-diagram-project fa-fw"></i
+                ><span class="mobile-hidden">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link p-10 mb-5 rounded-6" href="courses.html">
+                <i class="fa-solid fa-graduation-cap fa-fw"></i
+                ><span class="mobile-hidden">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link p-10 mb-5 rounded-6" href="friends.html">
+                <i class="fa-solid fa-user-group fa-fw"></i
+                ><span class="mobile-hidden">Friends</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link p-10 mb-5 rounded-6" href="files.html">
+                <i class="fa-regular fa-file fa-fw"></i
+                ><span class="mobile-hidden">Files</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link p-10 rounded-6" href="plans.html">
+                <i class="fa-regular fa-credit-card fa-fw"></i
+                ><span class="mobile-hidden">Plans</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="flex-1">
+        <!-- Start Main Header -->
+        <header class="main-header bg-white py-15">
+          <div class="main-container flex-between">
+            <div class="header__search relative">
+              <label for="search-field" class="visually-hidden"
+                >Search for anything</label
+              >
+              <input
+                type="search"
+                class="py-10 pr-10 border-ccc rounded-10"
+                id="search-field"
+                placeholder="Type A Keyword"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass search__icon absolute text-grey fs-14"
+              ></i>
+            </div>
+            <div class="header__icons flex items-center">
+              <span class="icons__bell relative">
+                <i class="fa-regular fa-bell fa-lg"></i>
+              </span>
+              <img
+                src="assets/avatar.webp"
+                alt="current user avatar"
+                width="32"
+                class="ml-15"
+              />
+            </div>
+          </div>
+        </header>
+        <!-- End Main Header -->
+
+        <!-- Start Main Content -->
+        <section class="main-content py-20">
+          <div class="main-container">
+            <h1 class="main-title">Settings</h1>
+          </div>
+        </section>
+        <!-- End Main Content -->
+      </main>
+    </div>
+  </body>
+</html>
