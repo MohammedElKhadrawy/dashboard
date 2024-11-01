@@ -376,6 +376,11 @@
   justify-content: space-between;
   align-items: center;
 }
+.card {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
 .btn-shape {
   padding: 0.25rem 0.75rem;
   border-radius: 0.375rem;
