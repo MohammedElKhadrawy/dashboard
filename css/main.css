@@ -1,6 +1,11 @@
 /* Important note! */
 /* No need to redefine :root variables here since we've already done that in framework.css file */
 /* make sure this file is imported after the framework file */
+:root {
+  --toggle-width: 75px;
+  --toggle-padding: 0.3125rem;
+  --toggle-circle-size: 24px;
+}
 
 *,
 *::before,
@@ -626,3 +631,57 @@ main {
   margin-left: -1.25rem;
 }
 /* End Projects Widget */
+
+/* Start Settings */
+.toggle__input {
+  display: none;
+}
+
+.toggle__switch {
+  width: var(--toggle-width);
+  padding: var(--toggle-padding);
+  border-radius: 4em;
+  background-color: #ccc;
+  cursor: pointer;
+  user-select: none; /* to prevent selection glitch */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle__switch::before {
+  content: '\f00d';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  height: var(--toggle-circle-size);
+  width: var(--toggle-circle-size);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle__input:checked + .toggle__switch {
+  background-color: var(--clr-blue);
+  color: var(--clr-blue);
+}
+
+.toggle__input:checked + .toggle__switch::before {
+  content: '\f00c';
+  /* pay attention to box-sizing: border-box */
+  /* toggle width - switch width - padding on both sides */
+  transform: translateX(
+    calc(
+      var(--toggle-width) - var(--toggle-circle-size) - 2 *
+        var(--toggle-padding)
+    )
+  );
+}
+
+.site-control .down-message {
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  height: 150px;
+}
+/* End Settings */

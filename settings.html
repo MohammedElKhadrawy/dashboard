@@ -114,6 +114,40 @@
         <section class="main-content py-20">
           <div class="main-container">
             <h1 class="main-title">Settings</h1>
+            <!-- Start Site Control Widget -->
+            <div class="site-control card">
+              <h2 class="mb-10">Site Control</h2>
+              <p class="fs-15 text-grey mb-20">
+                Control The Website If There Is Maintenance
+              </p>
+              <div class="flex-between mb-15">
+                <div>
+                  <span>Website Control</span>
+                  <p class="fs-13 text-grey mt-5">
+                    Spin Up/Down Website And Enter Reason
+                  </p>
+                </div>
+                <label for="website-toggle" class="toggle">
+                  <input
+                    type="checkbox"
+                    class="toggle__input"
+                    id="website-toggle"
+                    checked
+                  />
+                  <div class="toggle__switch text-grey"></div>
+                </label>
+              </div>
+
+              <label for="down-message" class="visually-hidden"
+                >Spin-down message</label
+              >
+              <textarea
+                class="down-message block w-full p-10 rounded-6 border-ccc"
+                id="down-message"
+                placeholder="Spin-Down Message Content"
+              ></textarea>
+            </div>
+            <!-- End Site Control Widget -->
           </div>
         </section>
         <!-- End Main Content -->
