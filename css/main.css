@@ -29,6 +29,18 @@ ul {
   list-style: none;
 }
 
+input,
+textarea {
+  /* leave it for accessibility */
+  /* outline: none; */
+  border: none;
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -137,7 +149,6 @@ main {
 }
 
 .main-header .header__search input:focus {
-  outline: none;
   width: 200px;
 }
 
@@ -241,14 +252,7 @@ main {
 /* End Welcome Widget */
 
 /* Start Quick Draft Widget */
-.quick-draft form > * {
-  font-family: inherit;
-  border: none;
-  outline: none;
-}
-
 .quick-draft form textarea {
-  resize: none;
   height: 180px;
 }
 
@@ -633,6 +637,12 @@ main {
 /* End Projects Widget */
 
 /* Start Settings */
+:disabled {
+  cursor: not-allowed;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+
 .toggle__input {
   display: none;
 }
@@ -679,9 +689,6 @@ main {
 }
 
 .site-control .down-message {
-  font-family: inherit;
-  resize: none;
-  outline: none;
   height: 150px;
 }
 /* End Settings */
