@@ -4,7 +4,7 @@
 :root {
   --toggle-width: 75px;
   --toggle-padding: 0.3125rem;
-  --toggle-circle-size: 24px;
+  --toggle-circle-size: 22px;
 }
 
 *,
@@ -652,6 +652,7 @@ main {
   padding: var(--toggle-padding);
   border-radius: 4em;
   background-color: #ccc;
+  color: var(--clr-grey);
   cursor: pointer;
   user-select: none; /* to prevent selection glitch */
   transition: background-color 0.3s, color 0.3s;
@@ -690,5 +691,17 @@ main {
 
 .site-control .down-message {
   height: 150px;
+}
+
+.security-info .info-box:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.security-info .info-box .pw-change {
+  transition: background-color 0.3s;
+}
+
+.security-info .info-box .pw-change:hover {
+  background-color: var(--clr-blue-alt);
 }
 /* End Settings */

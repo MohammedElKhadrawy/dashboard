@@ -120,7 +120,7 @@
               <p class="fs-15 text-grey mb-20">
                 Control The Website If There Is Maintenance
               </p>
-              <div class="flex-between mb-15">
+              <div class="flex-between mb-20">
                 <div>
                   <span>Website Control</span>
                   <p class="fs-13 text-grey mt-5">
@@ -134,7 +134,7 @@
                     id="website-toggle"
                     checked
                   />
-                  <div class="toggle__switch text-grey"></div>
+                  <div class="toggle__switch"></div>
                 </label>
               </div>
 
@@ -156,9 +156,7 @@
                 General Information About Your Account
               </p>
               <div class="grid mb-15">
-                <label for="first-name" class="fs-14 mb-10"
-                  >First Name</label
-                >
+                <label for="first-name" class="fs-14 mb-10">First Name</label>
                 <input
                   type="text"
                   class="p-10 rounded-6 border-ccc"
@@ -167,9 +165,7 @@
                 />
               </div>
               <div class="grid mb-15">
-                <label for="last-name" class="fs-14 mb-10"
-                  >Last Name</label
-                >
+                <label for="last-name" class="fs-14 mb-10">Last Name</label>
                 <input
                   type="text"
                   class="p-10 rounded-6 border-ccc"
@@ -178,9 +174,7 @@
                 />
               </div>
               <div>
-                <label for="email" class="block fs-14 mb-10"
-                  >Email</label
-                >
+                <label for="email" class="block fs-14 mb-10">Email</label>
                 <div class="flex items-center gap-20">
                   <input
                     type="email"
@@ -189,11 +183,61 @@
                     value="test@test.com"
                     disabled
                   />
-                  <a class="text-blue" href="#">Change</a>
+                  <a class="fs-14 text-blue" href="#">Change</a>
                 </div>
               </div>
             </div>
             <!-- End General Info Widget -->
+
+            <!-- Start Security Info Widget -->
+            <div class="security-info card">
+              <h2 class="mb-10">Security Info</h2>
+              <p class="fs-15 text-grey mb-20">
+                Security Information About Your Account
+              </p>
+              <div class="grid gap-20">
+                <div class="info-box flex-between pb-20">
+                  <div>
+                    <span>Password</span>
+                    <p class="fs-13 text-grey mt-5">
+                      Last Change On 25/10/2021
+                    </p>
+                  </div>
+                  <a
+                    class="pw-change btn-shape fs-14 text-white bg-blue"
+                    href="#"
+                    >Change</a
+                  >
+                </div>
+                <div class="info-box flex-between pb-20">
+                  <div>
+                    <span>Two-Factor Authentication</span>
+                    <p class="fs-13 text-grey mt-5">
+                      Enable/Disable The Feature
+                    </p>
+                  </div>
+                  <label for="feature-toggle" class="toggle">
+                    <input
+                      type="checkbox"
+                      class="toggle__input"
+                      id="feature-toggle"
+                      checked
+                    />
+                    <div class="toggle__switch"></div>
+                  </label>
+                </div>
+                <div class="info-box flex-between">
+                  <div>
+                    <span>Devices</span>
+                    <p class="fs-13 text-grey mt-5">
+                      Check The Login Devices List
+                    </p>
+                  </div>
+                  <a class="btn-shape fs-14 bg-eee" href="#">Devices</a>
+                </div>
+              </div>
+            </div>
+            <!-- End Security Info Widget -->
           </div>
         </section>
         <!-- End Main Content -->
