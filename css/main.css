@@ -704,4 +704,25 @@ main {
 .security-info .info-box .pw-change:hover {
   background-color: var(--clr-blue-alt);
 }
+
+.social-info .info-box {
+  flex-direction: row-reverse;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+}
+
+.social-info .info-box i {
+  width: 38px;
+  transition: color 0.3s;
+}
+
+.social-info .info-box input {
+  outline: none;
+  background-color: transparent;
+  border-left: 1px solid #ddd;
+}
+
+.social-info .info-box input:focus + i {
+  color: #000;
+}
 /* End Settings */
