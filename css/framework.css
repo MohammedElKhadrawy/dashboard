@@ -29,6 +29,9 @@
 .justify-between {
   justify-content: space-between;
 }
+.gap-15 {
+  gap: 0.9375rem;
+}
 .gap-20 {
   gap: 1.25rem;
 }
