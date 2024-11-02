@@ -725,4 +725,51 @@ main {
 .social-info .info-box input:focus + i {
   color: #000;
 }
+
+.widgets-control .check__input {
+  display: none;
+}
+
+.widgets-control .check__content {
+  cursor: pointer;
+}
+
+.widgets-control .check__content::before,
+.widgets-control .check__content::after {
+  width: 18px;
+  height: 18px;
+  border-radius: 0.25rem;
+}
+
+.widgets-control .check__content::before {
+  content: '';
+  display: inline-block;
+  border: 2px solid var(--clr-grey);
+  margin-right: 12px;
+  transition: border-color 0.3s;
+}
+
+.widgets-control .check__content:hover::before {
+  border-color: var(--clr-blue-alt);
+}
+
+.widgets-control .check__content::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 0.75rem;
+  background-color: var(--clr-blue);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  transform: scale(0) rotate(1turn);
+  transition: transform 0.3s;
+}
+
+.widgets-control .check__input:checked + .check__content::after {
+  transform: scale(1);
+}
 /* End Settings */
