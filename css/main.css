@@ -772,4 +772,70 @@ main {
 .widgets-control .check__input:checked + .check__content::after {
   transform: scale(1);
 }
+
+.backup-manager .freq-container {
+  border-bottom: 1px solid #eee;
+}
+
+.backup-manager .freq__input,
+.backup-manager .location__input {
+  display: none;
+}
+
+.backup-manager .freq__content,
+.backup-manager .location__content {
+  cursor: pointer;
+}
+
+.backup-manager .freq__content::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-grey);
+  margin-right: 12px;
+  transition: border-color 0.3s;
+}
+
+.backup-manager .freq__content::after {
+  content: '';
+  position: absolute;
+  left: 5px; /* to mimic padding */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--clr-blue);
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.backup-manager .freq__input:checked + .freq__content::before {
+  border-color: var(--clr-blue);
+}
+
+.backup-manager .freq__input:checked + .freq__content::after {
+  transform: scale(1);
+}
+
+.backup-manager .location__content {
+  border: 2px solid #ddd;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.backup-manager .location__input:checked + .location__content {
+  color: var(--clr-blue);
+  border-color: var(--clr-blue);
+}
+
+@media (min-width: 768px) {
+  .backup-manager .location-container {
+    flex-direction: row;
+    gap: 0.625rem;
+  }
+
+  .backup-manager .location-container .location {
+    flex: 1;
+  }
+}
 /* End Settings */

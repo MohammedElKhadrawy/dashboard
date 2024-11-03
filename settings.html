@@ -365,6 +365,91 @@
               </div>
             </div>
             <!-- End Widgets Control Widget -->
+
+            <!-- Start Backup Manager Widget -->
+            <div class="backup-manager card">
+              <h2 class="mb-10">Backup Manager</h2>
+              <p class="fs-15 text-grey mb-20">
+                Control Backup Frequency And Location
+              </p>
+              <div class="freq-container grid gap-15 pb-20 mb-20">
+                <label for="daily" class="freq">
+                  <input
+                    type="radio"
+                    class="freq__input"
+                    name="frequency"
+                    id="daily"
+                    checked
+                  />
+                  <div class="freq__content relative flex items-center">
+                    Daily
+                  </div>
+                </label>
+                <label for="weekly" class="freq">
+                  <input
+                    type="radio"
+                    class="freq__input"
+                    name="frequency"
+                    id="weekly"
+                  />
+                  <div class="freq__content relative flex items-center">
+                    Weekly
+                  </div>
+                </label>
+                <label for="monthly" class="freq">
+                  <input
+                    type="radio"
+                    class="freq__input"
+                    name="frequency"
+                    id="monthly"
+                  />
+                  <div class="freq__content relative flex items-center">
+                    Monthly
+                  </div>
+                </label>
+              </div>
+
+              <div class="location-container flex flex-col gap-15 text-center">
+                <label for="beta" class="location">
+                  <input
+                    type="radio"
+                    class="location__input"
+                    name="location"
+                    id="beta"
+                  />
+                  <div class="location__content grid py-15 rounded-10">
+                    <i class="fa-solid fa-server mb-10"></i>
+                    Beta
+                  </div>
+                </label>
+                <label for="alpha" class="location">
+                  <input
+                    type="radio"
+                    class="location__input"
+                    name="location"
+                    id="alpha"
+                    checked
+                  />
+                  <div class="location__content grid py-15 rounded-10">
+                    <i class="fa-solid fa-server mb-10"></i>
+                    Alpha
+                  </div>
+                </label>
+                <label for="omega" class="location">
+                  <input
+                    type="radio"
+                    class="location__input"
+                    name="location"
+                    id="omega"
+                  />
+                  <div class="location__content grid py-15 rounded-10">
+                    <i class="fa-solid fa-server mb-10"></i>
+                    Omega
+                  </div>
+                </label>
+              </div>
+            </div>
+            <!-- End Backup Manager Widget -->
           </div>
         </section>
         <!-- End Main Content -->
