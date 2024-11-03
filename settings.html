@@ -114,342 +114,349 @@
         <section class="main-content py-20">
           <div class="main-container">
             <h1 class="main-title">Settings</h1>
-            <!-- Start Site Control Widget -->
-            <div class="site-control card">
-              <h2 class="mb-10">Site Control</h2>
-              <p class="fs-15 text-grey mb-20">
-                Control The Website If There Is Maintenance
-              </p>
-              <div class="flex-between mb-20">
-                <div>
-                  <span>Website Control</span>
-                  <p class="fs-13 text-grey mt-5">
-                    Spin Up/Down Website And Enter Reason
-                  </p>
-                </div>
-                <label for="website-toggle" class="toggle">
-                  <input
-                    type="checkbox"
-                    class="toggle__input"
-                    id="website-toggle"
-                    checked
-                  />
-                  <div class="toggle__switch"></div>
-                </label>
-              </div>
 
-              <label for="down-message" class="visually-hidden"
-                >Spin-down message</label
-              >
-              <textarea
-                class="down-message block w-full p-10 rounded-6 border-ccc"
-                id="down-message"
-                placeholder="Spin-Down Message Content"
-              ></textarea>
-            </div>
-            <!-- End Site Control Widget -->
-
-            <!-- Start General Info Widget -->
-            <div class="general-info card">
-              <h2 class="mb-10">General Info</h2>
-              <p class="fs-15 text-grey mb-20">
-                General Information About Your Account
-              </p>
-              <div class="grid mb-15">
-                <label for="first-name" class="fs-14 mb-10">First Name</label>
-                <input
-                  type="text"
-                  class="p-10 rounded-6 border-ccc"
-                  id="first-name"
-                  placeholder="Enter Your First Name"
-                />
-              </div>
-              <div class="grid mb-15">
-                <label for="last-name" class="fs-14 mb-10">Last Name</label>
-                <input
-                  type="text"
-                  class="p-10 rounded-6 border-ccc"
-                  id="last-name"
-                  placeholder="Enter Your Last Name"
-                />
-              </div>
-              <div>
-                <label for="email" class="block fs-14 mb-10">Email</label>
-                <div class="flex items-center gap-20">
-                  <input
-                    type="email"
-                    class="flex-1 p-10 rounded-6 border-ccc"
-                    id="email"
-                    value="test@test.com"
-                    disabled
-                  />
-                  <a class="fs-14 text-blue" href="#">Change</a>
-                </div>
-              </div>
-            </div>
-            <!-- End General Info Widget -->
-
-            <!-- Start Security Info Widget -->
-            <div class="security-info card">
-              <h2 class="mb-10">Security Info</h2>
-              <p class="fs-15 text-grey mb-20">
-                Security Information About Your Account
-              </p>
-              <div class="grid gap-20">
-                <div class="info-box flex-between pb-20">
+            <div class="wrapper grid gap-fluid">
+              <!-- Start Site Control Widget -->
+              <div class="site-control card">
+                <h2 class="mb-10">Site Control</h2>
+                <p class="fs-15 text-grey mb-20">
+                  Control The Website If There Is Maintenance
+                </p>
+                <div class="flex-between mb-20">
                   <div>
-                    <span>Password</span>
+                    <span>Website Control</span>
                     <p class="fs-13 text-grey mt-5">
-                      Last Change On 25/10/2021
+                      Spin Up/Down Website And Enter Reason
                     </p>
                   </div>
-                  <a
-                    class="pw-change btn-shape fs-14 text-white bg-blue"
-                    href="#"
-                    >Change</a
-                  >
-                </div>
-                <div class="info-box flex-between pb-20">
-                  <div>
-                    <span>Two-Factor Authentication</span>
-                    <p class="fs-13 text-grey mt-5">
-                      Enable/Disable The Feature
-                    </p>
-                  </div>
-                  <label for="feature-toggle" class="toggle">
+                  <label for="website-toggle" class="toggle">
                     <input
                       type="checkbox"
                       class="toggle__input"
-                      id="feature-toggle"
+                      id="website-toggle"
                       checked
                     />
                     <div class="toggle__switch"></div>
                   </label>
                 </div>
-                <div class="info-box flex-between">
-                  <div>
-                    <span>Devices</span>
-                    <p class="fs-13 text-grey mt-5">
-                      Check The Login Devices List
-                    </p>
-                  </div>
-                  <a class="btn-shape fs-14 bg-eee" href="#">Devices</a>
-                </div>
-              </div>
-            </div>
-            <!-- End Security Info Widget -->
 
-            <!-- Start Social Info Widget -->
-            <div class="social-info card">
-              <h2 class="mb-10">Social Info</h2>
-              <p class="fs-15 text-grey mb-20">Social Media Information</p>
-              <div class="grid gap-15">
-                <div class="info-box rounded-6 flex">
-                  <label for="twitter" class="visually-hidden"
-                    >Twitter Username</label
-                  >
+                <label for="down-message" class="visually-hidden"
+                  >Spin-down message</label
+                >
+                <textarea
+                  class="down-message block w-full p-10 rounded-6 border-ccc"
+                  id="down-message"
+                  placeholder="Spin-Down Message Content"
+                ></textarea>
+              </div>
+              <!-- End Site Control Widget -->
+
+              <!-- Start General Info Widget -->
+              <div class="general-info card">
+                <h2 class="mb-10">General Info</h2>
+                <p class="fs-15 text-grey mb-20">
+                  General Information About Your Account
+                </p>
+                <div class="grid mb-15">
+                  <label for="first-name" class="fs-14 mb-10">First Name</label>
                   <input
                     type="text"
-                    class="flex-1 p-10"
-                    id="twitter"
-                    placeholder="Twitter Username"
+                    class="p-10 rounded-6 border-ccc"
+                    id="first-name"
+                    placeholder="Enter Your First Name"
                   />
-                  <i class="fa-brands fa-twitter flex-center text-grey"></i>
                 </div>
-                <div class="info-box rounded-6 flex">
-                  <label for="facebook" class="visually-hidden"
-                    >Facebook Username</label
-                  >
+                <div class="grid mb-15">
+                  <label for="last-name" class="fs-14 mb-10">Last Name</label>
                   <input
                     type="text"
-                    class="flex-1 p-10"
-                    id="facebook"
-                    placeholder="Facebook Username"
+                    class="p-10 rounded-6 border-ccc"
+                    id="last-name"
+                    placeholder="Enter Your Last Name"
                   />
-                  <i class="fa-brands fa-facebook-f flex-center text-grey"></i>
                 </div>
-                <div class="info-box rounded-6 flex">
-                  <label for="linkedin" class="visually-hidden"
-                    >Linkedin Username</label
-                  >
-                  <input
-                    type="text"
-                    class="flex-1 p-10"
-                    id="linkedin"
-                    placeholder="Linkedin Username"
-                  />
-                  <i class="fa-brands fa-linkedin flex-center text-grey"></i>
-                </div>
-                <div class="info-box rounded-6 flex">
-                  <label for="youtube" class="visually-hidden"
-                    >Youtube Username</label
-                  >
-                  <input
-                    type="text"
-                    class="flex-1 p-10"
-                    id="youtube"
-                    placeholder="Youtube Username"
-                  />
-                  <i class="fa-brands fa-youtube flex-center text-grey"></i>
+                <div>
+                  <label for="email" class="block fs-14 mb-10">Email</label>
+                  <div class="flex items-center gap-20">
+                    <input
+                      type="email"
+                      class="flex-1 p-10 rounded-6 border-ccc"
+                      id="email"
+                      value="test@test.com"
+                      disabled
+                    />
+                    <a class="fs-14 text-blue" href="#">Change</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- End Social Info Widget -->
+              <!-- End General Info Widget -->
 
-            <!-- Start Widgets Control Widget -->
-            <div class="widgets-control card">
-              <h2 class="mb-10">Widgets Control</h2>
-              <p class="fs-15 text-grey mb-20">Show/Hide Widgets</p>
-              <div class="grid gap-15">
-                <label for="qd-check" class="check w-fit">
-                  <input
-                    type="checkbox"
-                    class="check__input"
-                    id="qd-check"
-                    checked
-                  />
-                  <div class="check__content relative flex items-center">
-                    Quick Draft
+              <!-- Start Security Info Widget -->
+              <div class="security-info card">
+                <h2 class="mb-10">Security Info</h2>
+                <p class="fs-15 text-grey mb-20">
+                  Security Information About Your Account
+                </p>
+                <div class="grid gap-20">
+                  <div class="info-box flex-between pb-20">
+                    <div>
+                      <span>Password</span>
+                      <p class="fs-13 text-grey mt-5">
+                        Last Change On 25/10/2021
+                      </p>
+                    </div>
+                    <a
+                      class="pw-change btn-shape fs-14 text-white bg-blue"
+                      href="#"
+                      >Change</a
+                    >
                   </div>
-                </label>
-                <label for="yt-check" class="check w-fit">
-                  <input
-                    type="checkbox"
-                    class="check__input"
-                    id="yt-check"
-                    checked
-                  />
-                  <div class="check__content relative flex items-center">
-                    Yearly Targets
+                  <div class="info-box flex-between pb-20">
+                    <div>
+                      <span>Two-Factor Authentication</span>
+                      <p class="fs-13 text-grey mt-5">
+                        Enable/Disable The Feature
+                      </p>
+                    </div>
+                    <label for="feature-toggle" class="toggle">
+                      <input
+                        type="checkbox"
+                        class="toggle__input"
+                        id="feature-toggle"
+                        checked
+                      />
+                      <div class="toggle__switch"></div>
+                    </label>
                   </div>
-                </label>
-                <label for="ts-check" class="check w-fit">
-                  <input
-                    type="checkbox"
-                    class="check__input"
-                    id="ts-check"
-                    checked
-                  />
-                  <div class="check__content relative flex items-center">
-                    Tickets Statistics
+                  <div class="info-box flex-between">
+                    <div>
+                      <span>Devices</span>
+                      <p class="fs-13 text-grey mt-5">
+                        Check The Login Devices List
+                      </p>
+                    </div>
+                    <a class="btn-shape fs-14 bg-eee" href="#">Devices</a>
                   </div>
-                </label>
-                <label for="ln-check" class="check w-fit">
-                  <input
-                    type="checkbox"
-                    class="check__input"
-                    id="ln-check"
-                    checked
-                  />
-                  <div class="check__content relative flex items-center">
-                    Latest News
-                  </div>
-                </label>
-                <label for="lt-check" class="check w-fit">
-                  <input type="checkbox" class="check__input" id="lt-check" />
-                  <div class="check__content relative flex items-center">
-                    Latest Tasks
-                  </div>
-                </label>
-                <label for="tsi-check" class="check w-fit">
-                  <input
-                    type="checkbox"
-                    class="check__input"
-                    id="tsi-check"
-                    checked
-                  />
-                  <div class="check__content relative flex items-center">
-                    Top Search Items
-                  </div>
-                </label>
+                </div>
               </div>
-            </div>
-            <!-- End Widgets Control Widget -->
+              <!-- End Security Info Widget -->
 
-            <!-- Start Backup Manager Widget -->
-            <div class="backup-manager card">
-              <h2 class="mb-10">Backup Manager</h2>
-              <p class="fs-15 text-grey mb-20">
-                Control Backup Frequency And Location
-              </p>
-              <div class="freq-container grid gap-15 pb-20 mb-20">
-                <label for="daily" class="freq w-fit">
-                  <input
-                    type="radio"
-                    class="freq__input"
-                    name="frequency"
-                    id="daily"
-                    checked
-                  />
-                  <div class="freq__content relative flex items-center">
-                    Daily
+              <!-- Start Social Info Widget -->
+              <div class="social-info card">
+                <h2 class="mb-10">Social Info</h2>
+                <p class="fs-15 text-grey mb-20">Social Media Information</p>
+                <div class="grid gap-15">
+                  <div class="info-box rounded-6 flex">
+                    <label for="twitter" class="visually-hidden"
+                      >Twitter Username</label
+                    >
+                    <input
+                      type="text"
+                      class="p-10"
+                      id="twitter"
+                      placeholder="Twitter Username"
+                    />
+                    <i class="fa-brands fa-twitter flex-center text-grey"></i>
                   </div>
-                </label>
-                <label for="weekly" class="freq w-fit">
-                  <input
-                    type="radio"
-                    class="freq__input"
-                    name="frequency"
-                    id="weekly"
-                  />
-                  <div class="freq__content relative flex items-center">
-                    Weekly
+                  <div class="info-box rounded-6 flex">
+                    <label for="facebook" class="visually-hidden"
+                      >Facebook Username</label
+                    >
+                    <input
+                      type="text"
+                      class="p-10"
+                      id="facebook"
+                      placeholder="Facebook Username"
+                    />
+                    <i
+                      class="fa-brands fa-facebook-f flex-center text-grey"
+                    ></i>
                   </div>
-                </label>
-                <label for="monthly" class="freq w-fit">
-                  <input
-                    type="radio"
-                    class="freq__input"
-                    name="frequency"
-                    id="monthly"
-                  />
-                  <div class="freq__content relative flex items-center">
-                    Monthly
+                  <div class="info-box rounded-6 flex">
+                    <label for="linkedin" class="visually-hidden"
+                      >Linkedin Username</label
+                    >
+                    <input
+                      type="text"
+                      class="p-10"
+                      id="linkedin"
+                      placeholder="Linkedin Username"
+                    />
+                    <i class="fa-brands fa-linkedin flex-center text-grey"></i>
                   </div>
-                </label>
+                  <div class="info-box rounded-6 flex">
+                    <label for="youtube" class="visually-hidden"
+                      >Youtube Username</label
+                    >
+                    <input
+                      type="text"
+                      class="p-10"
+                      id="youtube"
+                      placeholder="Youtube Username"
+                    />
+                    <i class="fa-brands fa-youtube flex-center text-grey"></i>
+                  </div>
+                </div>
               </div>
+              <!-- End Social Info Widget -->
 
-              <div class="location-container flex flex-col gap-15 text-center">
-                <label for="beta" class="location">
-                  <input
-                    type="radio"
-                    class="location__input"
-                    name="location"
-                    id="beta"
-                  />
-                  <div class="location__content grid py-15 rounded-10">
-                    <i class="fa-solid fa-server mb-10"></i>
-                    Beta
-                  </div>
-                </label>
-                <label for="alpha" class="location">
-                  <input
-                    type="radio"
-                    class="location__input"
-                    name="location"
-                    id="alpha"
-                    checked
-                  />
-                  <div class="location__content grid py-15 rounded-10">
-                    <i class="fa-solid fa-server mb-10"></i>
-                    Alpha
-                  </div>
-                </label>
-                <label for="omega" class="location">
-                  <input
-                    type="radio"
-                    class="location__input"
-                    name="location"
-                    id="omega"
-                  />
-                  <div class="location__content grid py-15 rounded-10">
-                    <i class="fa-solid fa-server mb-10"></i>
-                    Omega
-                  </div>
-                </label>
+              <!-- Start Widgets Control Widget -->
+              <div class="widgets-control card">
+                <h2 class="mb-10">Widgets Control</h2>
+                <p class="fs-15 text-grey mb-20">Show/Hide Widgets</p>
+                <div class="grid gap-15">
+                  <label for="qd-check" class="check w-fit">
+                    <input
+                      type="checkbox"
+                      class="check__input"
+                      id="qd-check"
+                      checked
+                    />
+                    <div class="check__content relative flex items-center">
+                      Quick Draft
+                    </div>
+                  </label>
+                  <label for="yt-check" class="check w-fit">
+                    <input
+                      type="checkbox"
+                      class="check__input"
+                      id="yt-check"
+                      checked
+                    />
+                    <div class="check__content relative flex items-center">
+                      Yearly Targets
+                    </div>
+                  </label>
+                  <label for="ts-check" class="check w-fit">
+                    <input
+                      type="checkbox"
+                      class="check__input"
+                      id="ts-check"
+                      checked
+                    />
+                    <div class="check__content relative flex items-center">
+                      Tickets Statistics
+                    </div>
+                  </label>
+                  <label for="ln-check" class="check w-fit">
+                    <input
+                      type="checkbox"
+                      class="check__input"
+                      id="ln-check"
+                      checked
+                    />
+                    <div class="check__content relative flex items-center">
+                      Latest News
+                    </div>
+                  </label>
+                  <label for="lt-check" class="check w-fit">
+                    <input type="checkbox" class="check__input" id="lt-check" />
+                    <div class="check__content relative flex items-center">
+                      Latest Tasks
+                    </div>
+                  </label>
+                  <label for="tsi-check" class="check w-fit">
+                    <input
+                      type="checkbox"
+                      class="check__input"
+                      id="tsi-check"
+                      checked
+                    />
+                    <div class="check__content relative flex items-center">
+                      Top Search Items
+                    </div>
+                  </label>
+                </div>
               </div>
+              <!-- End Widgets Control Widget -->
+
+              <!-- Start Backup Manager Widget -->
+              <div class="backup-manager card">
+                <h2 class="mb-10">Backup Manager</h2>
+                <p class="fs-15 text-grey mb-20">
+                  Control Backup Frequency And Location
+                </p>
+                <div class="freq-container grid gap-15 pb-20 mb-20">
+                  <label for="daily" class="freq w-fit">
+                    <input
+                      type="radio"
+                      class="freq__input"
+                      name="frequency"
+                      id="daily"
+                      checked
+                    />
+                    <div class="freq__content relative flex items-center">
+                      Daily
+                    </div>
+                  </label>
+                  <label for="weekly" class="freq w-fit">
+                    <input
+                      type="radio"
+                      class="freq__input"
+                      name="frequency"
+                      id="weekly"
+                    />
+                    <div class="freq__content relative flex items-center">
+                      Weekly
+                    </div>
+                  </label>
+                  <label for="monthly" class="freq w-fit">
+                    <input
+                      type="radio"
+                      class="freq__input"
+                      name="frequency"
+                      id="monthly"
+                    />
+                    <div class="freq__content relative flex items-center">
+                      Monthly
+                    </div>
+                  </label>
+                </div>
+
+                <div
+                  class="location-container flex flex-col gap-15 text-center"
+                >
+                  <label for="beta" class="location">
+                    <input
+                      type="radio"
+                      class="location__input"
+                      name="location"
+                      id="beta"
+                    />
+                    <div class="location__content grid py-15 rounded-10">
+                      <i class="fa-solid fa-server mb-10"></i>
+                      Beta
+                    </div>
+                  </label>
+                  <label for="alpha" class="location">
+                    <input
+                      type="radio"
+                      class="location__input"
+                      name="location"
+                      id="alpha"
+                      checked
+                    />
+                    <div class="location__content grid py-15 rounded-10">
+                      <i class="fa-solid fa-server mb-10"></i>
+                      Alpha
+                    </div>
+                  </label>
+                  <label for="omega" class="location">
+                    <input
+                      type="radio"
+                      class="location__input"
+                      name="location"
+                      id="omega"
+                    />
+                    <div class="location__content grid py-15 rounded-10">
+                      <i class="fa-solid fa-server mb-10"></i>
+                      Omega
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <!-- End Backup Manager Widget -->
             </div>
-            <!-- End Backup Manager Widget -->
           </div>
         </section>
         <!-- End Main Content -->

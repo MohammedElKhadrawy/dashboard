@@ -693,6 +693,10 @@ main {
   height: 150px;
 }
 
+.general-info input[type='email'] {
+  min-width: 0;
+}
+
 .security-info .info-box:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
@@ -717,6 +721,7 @@ main {
 }
 
 .social-info .info-box input {
+  width: calc(100% - 38px);
   outline: none;
   background-color: transparent;
   border-left: 1px solid #ddd;
