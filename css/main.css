@@ -3,8 +3,8 @@
 /* make sure this file is imported after the framework file */
 :root {
   --toggle-width: 75px;
-  --toggle-padding: 0.3125rem;
-  --toggle-circle-size: 22px;
+  --toggle-padding: 0.25rem;
+  --toggle-circle-size: 24px;
 }
 
 *,
