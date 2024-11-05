@@ -842,6 +842,12 @@ main {
 /* End Settings */
 
 /* Start Profile */
+@media (min-width: 768px) {
+  .profile-page-wrapper .row-container {
+    flex-direction: row;
+  }
+}
+
 .profile-overview {
   overflow: hidden;
 }
@@ -925,6 +931,10 @@ main {
 }
 
 @media (min-width: 768px) {
+  .row-container .my-skills {
+    flex-grow: 1;
+  }
+
   .my-skills .skills-row {
     justify-content: flex-start;
   }
@@ -935,6 +945,10 @@ main {
 }
 
 @media (min-width: 768px) {
+  .row-container .latest-activities {
+    flex-grow: 2;
+  }
+
   .latest-activities .activity {
     display: flex;
     align-items: center;

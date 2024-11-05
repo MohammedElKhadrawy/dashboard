@@ -114,252 +114,271 @@
         <section class="main-content py-20">
           <div class="main-container">
             <h1 class="main-title">Profile</h1>
-            <!-- Start Profile Overview -->
-            <div class="profile-overview bg-white rounded-10">
-              <div class="profile-stats p-20 text-center">
-                <img
-                  class="profile__avatar"
-                  src="assets/avatar.webp"
-                  alt="current user avatar"
-                  width="120"
-                />
-                <h2 class="profile__name mb-10">Ethan Clarke</h2>
-                <p class="text-grey mb-15">Level 20</p>
-                <div class="profile__progressbar bg-eee rounded-10">
+
+            <div class="profile-page-wrapper grid gap-fluid">
+              <!-- Start Profile Overview -->
+              <div class="profile-overview bg-white rounded-10">
+                <div class="profile-stats p-20 text-center">
+                  <img
+                    class="profile__avatar"
+                    src="assets/avatar.webp"
+                    alt="current user avatar"
+                    width="120"
+                  />
+                  <h2 class="profile__name mb-10">Ethan Clarke</h2>
+                  <p class="text-grey mb-15">Level 20</p>
+                  <div class="profile__progressbar bg-eee rounded-10">
+                    <div
+                      class="progressbar__fill bg-blue rounded-10"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                  <div class="rating fs-13 text-orange mb-10">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="fs-13 text-grey">550 Rating(s)</p>
+                </div>
+
+                <div class="profile-info">
                   <div
-                    class="progressbar__fill bg-blue rounded-10"
-                    style="width: 70%"
-                  ></div>
-                </div>
-                <div class="rating fs-13 text-orange mb-10">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="fs-13 text-grey">550 Rating(s)</p>
-              </div>
-
-              <div class="profile-info">
-                <div
-                  class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
-                >
-                  <h3 class="fs-15 w-full">General Information</h3>
-                  <div>
-                    <span class="text-grey">Full Name:</span> Ethan Clarke
-                  </div>
-                  <div><span class="text-grey">Gender:</span> Male</div>
-                  <div><span class="text-grey">Country:</span> USA</div>
-                  <div>
-                    <label for="general-info" class="toggle">
-                      <input
-                        type="checkbox"
-                        class="toggle__input"
-                        id="general-info"
-                        checked
-                      />
-                      <div class="toggle__switch"></div>
-                    </label>
-                  </div>
-                </div>
-                <div
-                  class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
-                >
-                  <h3 class="fs-15 w-full">Personal Information</h3>
-                  <div><span class="text-grey">Email:</span> test@test.com</div>
-                  <div>
-                    <span class="text-grey">Phone:</span> (555) 123-4567
-                  </div>
-                  <div>
-                    <span class="text-grey">Date of Birth:</span> 25/10/1982
-                  </div>
-                  <div>
-                    <label for="personal-info" class="toggle">
-                      <input
-                        type="checkbox"
-                        class="toggle__input"
-                        id="personal-info"
-                      />
-                      <div class="toggle__switch"></div>
-                    </label>
-                  </div>
-                </div>
-                <div
-                  class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
-                >
-                  <h3 class="fs-15 w-full">Job Information</h3>
-                  <div>
-                    <span class="text-grey">Title:</span> Full Stack Developer
-                  </div>
-                  <div>
-                    <span class="text-grey">Programming Language:</span>
-                    JavaScript
-                  </div>
-                  <div>
-                    <span class="text-grey">Years Of Experience:</span> 15+
-                  </div>
-                  <div>
-                    <label for="job-info" class="toggle">
-                      <input
-                        type="checkbox"
-                        class="toggle__input"
-                        id="job-info"
-                        checked
-                      />
-                      <div class="toggle__switch"></div>
-                    </label>
-                  </div>
-                </div>
-                <div
-                  class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
-                >
-                  <h3 class="fs-15 w-full">Billing Information</h3>
-                  <div>
-                    <span class="text-grey">Payment Method:</span> Paypal
-                  </div>
-                  <div>
-                    <span class="text-grey">Email:</span> email@website.com
-                  </div>
-                  <div>
-                    <span class="text-grey">Subscription:</span> Monthly
-                  </div>
-                  <div>
-                    <label for="billing-info" class="toggle">
-                      <input
-                        type="checkbox"
-                        class="toggle__input"
-                        id="billing-info"
-                      />
-                      <div class="toggle__switch"></div>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Profile Overview -->
-
-            <!-- Start My Skills -->
-            <div class="my-skills card">
-              <h2 class="mb-10">My Skills</h2>
-              <p class="fs-15 text-grey mb-20">Complete Skills List</p>
-              <ul class="grid gap-15">
-                <li class="skills-row flex-center gap-5 fs-14 pb-15">
-                  <span class="btn-shape bg-eee">HTML</span>
-                  <span class="btn-shape bg-eee">Pugjs</span>
-                  <span class="btn-shape bg-eee">HAML</span>
-                </li>
-                <li class="skills-row flex-center gap-5 fs-14 pb-15">
-                  <span class="btn-shape bg-eee">CSS</span>
-                  <span class="btn-shape bg-eee">SASS</span>
-                  <span class="btn-shape bg-eee">Stylus</span>
-                </li>
-                <li class="skills-row flex-center gap-5 fs-14 pb-15">
-                  <span class="btn-shape bg-eee">JavaScript</span>
-                  <span class="btn-shape bg-eee">TypeScript</span>
-                </li>
-                <li class="skills-row flex-center gap-5 fs-14 pb-15">
-                  <span class="btn-shape bg-eee">Vuejs</span>
-                  <span class="btn-shape bg-eee">Reactjs</span>
-                </li>
-                <li class="skills-row flex-center gap-5 fs-14 pb-15">
-                  <span class="btn-shape bg-eee">Jest</span>
-                  <span class="btn-shape bg-eee">Jasmine</span>
-                </li>
-                <li class="skills-row flex-center gap-5 fs-14 pb-15">
-                  <span class="btn-shape bg-eee">PHP</span>
-                  <span class="btn-shape bg-eee">Laravel</span>
-                </li>
-                <li class="skills-row flex-center gap-5 fs-14">
-                  <span class="btn-shape bg-eee">Python</span>
-                  <span class="btn-shape bg-eee">Django</span>
-                </li>
-              </ul>
-            </div>
-            <!-- End My Skills -->
-
-            <!-- Start Latest Activities -->
-            <div class="latest-activities card">
-              <h2 class="mb-10">Latest Activities</h2>
-              <p class="fs-15 text-grey mb-20">
-                Latest Activities Done By The User
-              </p>
-
-              <div class="grid gap-20">
-                <div class="activity mobile-text-center pb-20">
-                  <div
-                    class="activity__details flex flex-col items-center gap-15 mb-15"
+                    class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
                   >
-                    <img src="assets/activity-01.webp" alt="" width="64" />
+                    <h3 class="fs-15 w-full">General Information</h3>
                     <div>
-                      <span>Store</span>
-                      <p class="fs-15 text-grey mt-10">
-                        Bought The Mastering Python Course
-                      </p>
+                      <span class="text-grey">Full Name:</span> Ethan Clarke
+                    </div>
+                    <div><span class="text-grey">Gender:</span> Male</div>
+                    <div><span class="text-grey">Country:</span> USA</div>
+                    <div>
+                      <label for="general-info" class="toggle">
+                        <input
+                          type="checkbox"
+                          class="toggle__input"
+                          id="general-info"
+                          checked
+                        />
+                        <div class="toggle__switch"></div>
+                      </label>
                     </div>
                   </div>
-                  <div class="fs-14 text-center">
-                    <span>12:05</span>
-                    <span class="block mt-5 text-grey">Yesterday</span>
-                  </div>
-                </div>
-
-                <div class="activity mobile-text-center pb-20">
                   <div
-                    class="activity__details flex flex-col items-center gap-15 mb-15"
+                    class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
                   >
-                    <img src="assets/activity-02.webp" alt="" width="64" />
+                    <h3 class="fs-15 w-full">Personal Information</h3>
                     <div>
-                      <span>Academy</span>
-                      <p class="fs-15 text-grey mt-10">
-                        Got The PHP Certificate
-                      </p>
+                      <span class="text-grey">Email:</span> test@test.com
+                    </div>
+                    <div>
+                      <span class="text-grey">Phone:</span> (555) 123-4567
+                    </div>
+                    <div>
+                      <span class="text-grey">Date of Birth:</span> 25/10/1982
+                    </div>
+                    <div>
+                      <label for="personal-info" class="toggle">
+                        <input
+                          type="checkbox"
+                          class="toggle__input"
+                          id="personal-info"
+                        />
+                        <div class="toggle__switch"></div>
+                      </label>
                     </div>
                   </div>
-                  <div class="fs-14 text-center">
-                    <span>16:05</span>
-                    <span class="block mt-5 text-grey">Yesterday</span>
-                  </div>
-                </div>
-
-                <div class="activity mobile-text-center pb-20">
                   <div
-                    class="activity__details flex flex-col items-center gap-15 mb-15"
+                    class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
                   >
-                    <img src="assets/activity-03.webp" alt="" width="64" />
+                    <h3 class="fs-15 w-full">Job Information</h3>
                     <div>
-                      <span>Badges</span>
-                      <p class="fs-15 text-grey mt-10">
-                        Unlocked The 10 Skills Badge
-                      </p>
+                      <span class="text-grey">Title:</span> Full Stack Developer
+                    </div>
+                    <div>
+                      <span class="text-grey">Programming Language:</span>
+                      JavaScript
+                    </div>
+                    <div>
+                      <span class="text-grey">Years Of Experience:</span> 15+
+                    </div>
+                    <div>
+                      <label for="job-info" class="toggle">
+                        <input
+                          type="checkbox"
+                          class="toggle__input"
+                          id="job-info"
+                          checked
+                        />
+                        <div class="toggle__switch"></div>
+                      </label>
                     </div>
                   </div>
-                  <div class="fs-14 text-center">
-                    <span>18:05</span>
-                    <span class="block mt-5 text-grey">Yesterday</span>
-                  </div>
-                </div>
-                
-                <div class="activity mobile-text-center">
                   <div
-                    class="activity__details flex flex-col items-center gap-15 mb-15"
+                    class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
                   >
-                    <img src="assets/activity-01.webp" alt="" width="64" />
+                    <h3 class="fs-15 w-full">Billing Information</h3>
                     <div>
-                      <span>Store</span>
-                      <p class="fs-15 text-grey mt-10">
-                        Bought The Typescript Course
-                      </p>
+                      <span class="text-grey">Payment Method:</span> Paypal
                     </div>
-                  </div>
-                  <div class="fs-14 text-center">
-                    <span>18:10</span>
-                    <span class="block mt-5 text-grey">Yesterday</span>
+                    <div>
+                      <span class="text-grey">Email:</span> email@website.com
+                    </div>
+                    <div>
+                      <span class="text-grey">Subscription:</span> Monthly
+                    </div>
+                    <div>
+                      <label for="billing-info" class="toggle">
+                        <input
+                          type="checkbox"
+                          class="toggle__input"
+                          id="billing-info"
+                        />
+                        <div class="toggle__switch"></div>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- End Profile Overview -->
+
+              <div class="row-container flex flex-col gap-fluid">
+                <!-- Start My Skills -->
+                <div class="my-skills card">
+                  <h2 class="mb-10">My Skills</h2>
+                  <p class="fs-15 text-grey mb-20">Complete Skills List</p>
+                  <ul class="grid gap-15">
+                    <li
+                      class="skills-row flex-center flex-wrap gap-5 fs-14 pb-15"
+                    >
+                      <span class="btn-shape bg-eee">HTML</span>
+                      <span class="btn-shape bg-eee">Pugjs</span>
+                      <span class="btn-shape bg-eee">HAML</span>
+                    </li>
+                    <li
+                      class="skills-row flex-center flex-wrap gap-5 fs-14 pb-15"
+                    >
+                      <span class="btn-shape bg-eee">CSS</span>
+                      <span class="btn-shape bg-eee">SASS</span>
+                      <span class="btn-shape bg-eee">Stylus</span>
+                    </li>
+                    <li
+                      class="skills-row flex-center flex-wrap gap-5 fs-14 pb-15"
+                    >
+                      <span class="btn-shape bg-eee">JavaScript</span>
+                      <span class="btn-shape bg-eee">TypeScript</span>
+                    </li>
+                    <li
+                      class="skills-row flex-center flex-wrap gap-5 fs-14 pb-15"
+                    >
+                      <span class="btn-shape bg-eee">Vuejs</span>
+                      <span class="btn-shape bg-eee">Reactjs</span>
+                    </li>
+                    <li
+                      class="skills-row flex-center flex-wrap gap-5 fs-14 pb-15"
+                    >
+                      <span class="btn-shape bg-eee">Jest</span>
+                      <span class="btn-shape bg-eee">Jasmine</span>
+                    </li>
+                    <li
+                      class="skills-row flex-center flex-wrap gap-5 fs-14 pb-15"
+                    >
+                      <span class="btn-shape bg-eee">PHP</span>
+                      <span class="btn-shape bg-eee">Laravel</span>
+                    </li>
+                    <li class="skills-row flex-center flex-wrap gap-5 fs-14">
+                      <span class="btn-shape bg-eee">Python</span>
+                      <span class="btn-shape bg-eee">Django</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End My Skills -->
+
+                <!-- Start Latest Activities -->
+                <div class="latest-activities card">
+                  <h2 class="mb-10">Latest Activities</h2>
+                  <p class="fs-15 text-grey mb-20">
+                    Latest Activities Done By The User
+                  </p>
+
+                  <div class="grid gap-20">
+                    <div class="activity mobile-text-center pb-20">
+                      <div
+                        class="activity__details flex flex-col items-center gap-15 mb-15"
+                      >
+                        <img src="assets/activity-01.webp" alt="" width="64" />
+                        <div>
+                          <span>Store</span>
+                          <p class="fs-15 text-grey mt-10">
+                            Bought The Mastering Python Course
+                          </p>
+                        </div>
+                      </div>
+                      <div class="fs-14 text-center">
+                        <span>12:05</span>
+                        <span class="block mt-5 text-grey">Yesterday</span>
+                      </div>
+                    </div>
+
+                    <div class="activity mobile-text-center pb-20">
+                      <div
+                        class="activity__details flex flex-col items-center gap-15 mb-15"
+                      >
+                        <img src="assets/activity-02.webp" alt="" width="64" />
+                        <div>
+                          <span>Academy</span>
+                          <p class="fs-15 text-grey mt-10">
+                            Got The PHP Certificate
+                          </p>
+                        </div>
+                      </div>
+                      <div class="fs-14 text-center">
+                        <span>16:05</span>
+                        <span class="block mt-5 text-grey">Yesterday</span>
+                      </div>
+                    </div>
+
+                    <div class="activity mobile-text-center pb-20">
+                      <div
+                        class="activity__details flex flex-col items-center gap-15 mb-15"
+                      >
+                        <img src="assets/activity-03.webp" alt="" width="64" />
+                        <div>
+                          <span>Badges</span>
+                          <p class="fs-15 text-grey mt-10">
+                            Unlocked The 10 Skills Badge
+                          </p>
+                        </div>
+                      </div>
+                      <div class="fs-14 text-center">
+                        <span>18:05</span>
+                        <span class="block mt-5 text-grey">Yesterday</span>
+                      </div>
+                    </div>
+
+                    <div class="activity mobile-text-center">
+                      <div
+                        class="activity__details flex flex-col items-center gap-15 mb-15"
+                      >
+                        <img src="assets/activity-01.webp" alt="" width="64" />
+                        <div>
+                          <span>Store</span>
+                          <p class="fs-15 text-grey mt-10">
+                            Bought The Typescript Course
+                          </p>
+                        </div>
+                      </div>
+                      <div class="fs-14 text-center">
+                        <span>18:10</span>
+                        <span class="block mt-5 text-grey">Yesterday</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Latest Activities -->
+              </div>
             </div>
-            <!-- End Latest Activities -->
           </div>
         </section>
         <!-- End Main Content -->
