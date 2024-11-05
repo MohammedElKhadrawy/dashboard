@@ -1037,3 +1037,43 @@ main {
   background-color: var(--clr-green);
 }
 /* End Projects */
+
+/* Start Courses */
+.courses-page-wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+
+.course {
+  overflow: hidden;
+}
+
+.course__instructor-img {
+  border: 2px solid #fff;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  top: 1.25rem;
+  left: 1.25rem;
+}
+
+.course__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.course__title {
+  font-size: 1rem;
+}
+
+.course__description {
+  line-height: 1.6;
+}
+
+.course__info {
+  border-top: 1px solid #eee;
+}
+
+.course__info .info__badge {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+/* End Courses */
