@@ -85,9 +85,6 @@ img {
 }
 
 .sidebar__link {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
   transition: background-color 0.3s;
 }
 
@@ -131,7 +128,9 @@ img {
   }
 
   .sidebar__link {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
   }
 }
 /* End Sidebar */
@@ -519,10 +518,6 @@ main {
 /* End Latest Post Widget */
 
 /* Start Social Media Stats Widget */
-.social-stats .stats-container {
-  gap: 0.625rem;
-}
-
 .social-stats .stat-box .stat__icon {
   width: 88px; /* same as parent's height */
   transition: transform 0.3s;
