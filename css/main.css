@@ -888,7 +888,7 @@ main {
 .profile-info .info-row .toggle {
   /* to properly size interaction area */
   /* w-fit class won't work, cuz labels are inline elements */
-  display: inline-block; 
+  display: inline-block;
 }
 
 .profile-info .info-row .toggle__switch::before {
@@ -961,3 +961,79 @@ main {
   }
 }
 /* End Profile */
+
+/* Start Projects */
+.project__date {
+  top: 0.625rem;
+  right: 0.625rem;
+}
+
+.project__title {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.project__team {
+  padding-top: 1.875rem;
+}
+
+.project__team a:not(:first-child) {
+  margin-left: -1.25rem;
+}
+
+.project__team a:hover img {
+  z-index: 10;
+}
+
+.project__team img {
+  border: 2px solid #fff;
+}
+
+.project__aspects {
+  align-items: flex-start;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+  .project__aspects {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.3125rem;
+  }
+
+  .project__milestone {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.project__milestone .milestone__progressbar {
+  width: min(100%, 250px);
+}
+
+.milestone__progressbar .progressbar__fill {
+  height: 8px;
+}
+
+.milestone__progressbar .stage-1 {
+  width: 25%;
+  background-color: var(--clr-red);
+}
+
+.milestone__progressbar .stage-2 {
+  width: 50%;
+  background-color: var(--clr-orange);
+}
+
+.milestone__progressbar .stage-3 {
+  width: 75%;
+  background-color: var(--clr-blue);
+}
+
+.milestone__progressbar .stage-4 {
+  width: 100%;
+  background-color: var(--clr-green);
+}
+/* End Projects */
