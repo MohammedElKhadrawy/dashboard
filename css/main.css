@@ -843,8 +843,8 @@ main {
 
 /* Start Profile */
 @media (min-width: 768px) {
-  .profile-page-wrapper .row-container {
-    flex-direction: row;
+  .profile-page-wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -886,7 +886,9 @@ main {
 }
 
 .profile-info .info-row .toggle {
-  display: inline-block;
+  /* to properly size interaction area */
+  /* w-fit class won't work, cuz labels are inline elements */
+  display: inline-block; 
 }
 
 .profile-info .info-row .toggle__switch::before {
@@ -907,7 +909,8 @@ main {
 }
 
 @media (min-width: 768px) {
-  .profile-overview {
+  .profile-page-wrapper .profile-overview {
+    grid-column: 1 / span 3;
     display: flex;
     align-items: center;
   }
@@ -931,10 +934,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  .row-container .my-skills {
-    flex-grow: 1;
-  }
-
   .my-skills .skills-row {
     justify-content: flex-start;
   }
@@ -945,8 +944,8 @@ main {
 }
 
 @media (min-width: 768px) {
-  .row-container .latest-activities {
-    flex-grow: 2;
+  .profile-page-wrapper .latest-activities {
+    grid-column: 2 / span 2;
   }
 
   .latest-activities .activity {
