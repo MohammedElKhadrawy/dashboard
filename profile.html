@@ -30,16 +30,16 @@
               </a>
             </li>
             <li>
-              <a
-                class="sidebar__link p-10 mb-5 rounded-6"
-                href="settings.html"
-              >
+              <a class="sidebar__link p-10 mb-5 rounded-6" href="settings.html">
                 <i class="fa-solid fa-gear fa-fw"></i
                 ><span class="mobile-hidden">Settings</span>
               </a>
             </li>
             <li>
-              <a class="active sidebar__link p-10 mb-5 rounded-6" href="profile.html">
+              <a
+                class="active sidebar__link p-10 mb-5 rounded-6"
+                href="profile.html"
+              >
                 <i class="fa-regular fa-circle-user fa-fw"></i
                 ><span class="mobile-hidden">Profile</span>
               </a>
@@ -114,6 +114,130 @@
         <section class="main-content py-20">
           <div class="main-container">
             <h1 class="main-title">Profile</h1>
+            <!-- Start Profile Overview -->
+            <div class="profile-overview bg-white rounded-10">
+              <div class="profile-stats p-20 text-center">
+                <img
+                  class="profile__avatar"
+                  src="assets/avatar.webp"
+                  alt="current user avatar"
+                  width="120"
+                />
+                <h2 class="profile__name mb-10">Ethan Clarke</h2>
+                <p class="text-grey mb-15">Level 20</p>
+                <div class="profile__progressbar bg-eee rounded-10">
+                  <div
+                    class="progressbar__fill bg-blue rounded-10"
+                    style="width: 70%"
+                  ></div>
+                </div>
+                <div class="rating fs-13 text-orange mb-10">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="fs-13 text-grey">550 Rating(s)</p>
+              </div>
+
+              <div class="profile-info">
+                <div
+                  class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
+                >
+                  <h3 class="fs-15 w-full">General Information</h3>
+                  <div>
+                    <span class="text-grey">Full Name:</span> Ethan Clarke
+                  </div>
+                  <div><span class="text-grey">Gender:</span> Male</div>
+                  <div><span class="text-grey">Country:</span> USA</div>
+                  <div>
+                    <label for="general-info" class="toggle">
+                      <input
+                        type="checkbox"
+                        class="toggle__input"
+                        id="general-info"
+                        checked
+                      />
+                      <div class="toggle__switch"></div>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
+                >
+                  <h3 class="fs-15 w-full">Personal Information</h3>
+                  <div><span class="text-grey">Email:</span> test@test.com</div>
+                  <div>
+                    <span class="text-grey">Phone:</span> (555) 123-4567
+                  </div>
+                  <div>
+                    <span class="text-grey">Date of Birth:</span> 25/10/1982
+                  </div>
+                  <div>
+                    <label for="personal-info" class="toggle">
+                      <input
+                        type="checkbox"
+                        class="toggle__input"
+                        id="personal-info"
+                      />
+                      <div class="toggle__switch"></div>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
+                >
+                  <h3 class="fs-15 w-full">Job Information</h3>
+                  <div>
+                    <span class="text-grey">Title:</span> Full Stack Developer
+                  </div>
+                  <div>
+                    <span class="text-grey">Programming Language:</span>
+                    JavaScript
+                  </div>
+                  <div>
+                    <span class="text-grey">Years Of Experience:</span> 15+
+                  </div>
+                  <div>
+                    <label for="job-info" class="toggle">
+                      <input
+                        type="checkbox"
+                        class="toggle__input"
+                        id="job-info"
+                        checked
+                      />
+                      <div class="toggle__switch"></div>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="info-row p-20 fs-14 mobile-text-center flex-center flex-wrap gap-10"
+                >
+                  <h3 class="fs-15 w-full">Billing Information</h3>
+                  <div>
+                    <span class="text-grey">Payment Method:</span> Paypal
+                  </div>
+                  <div>
+                    <span class="text-grey">Email:</span> email@website.com
+                  </div>
+                  <div>
+                    <span class="text-grey">Subscription:</span> Monthly
+                  </div>
+                  <div>
+                    <label for="billing-info" class="toggle">
+                      <input
+                        type="checkbox"
+                        class="toggle__input"
+                        id="billing-info"
+                      />
+                      <div class="toggle__switch"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Profile Overview -->
           </div>
         </section>
         <!-- End Main Content -->

@@ -5,6 +5,7 @@
   --toggle-width: 75px;
   --toggle-padding: 0.25rem;
   --toggle-circle-size: 24px;
+  --toggle-info-circle-size: 18px;
 }
 
 *,
@@ -844,3 +845,83 @@ main {
   }
 }
 /* End Settings */
+
+/* Start Profile */
+.profile-overview {
+  overflow: hidden;
+}
+
+.profile-stats .profile__avatar {
+  margin: 0 auto 0.625rem;
+}
+
+.profile-stats .profile__name {
+  font-size: 1.17rem;
+}
+
+.profile-stats .profile__progressbar {
+  max-width: 180px;
+  margin: 0 auto 0.625rem;
+}
+
+.profile-stats .profile__progressbar .progressbar__fill {
+  height: 6px;
+}
+
+.profile-info .info-row {
+  transition: background-color 0.3s;
+}
+
+.profile-info .info-row:hover {
+  background-color: #f9f9f9;
+}
+
+.profile-info .info-row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.profile-info .info-row > div {
+  width: min(100%, 250px); /* to avoid overflow */
+}
+
+.profile-info .info-row .toggle {
+  display: inline-block;
+}
+
+.profile-info .info-row .toggle__switch::before {
+  content: '\f070';
+  width: var(--toggle-info-circle-size);
+  height: var(--toggle-info-circle-size);
+  font-size: 0.625rem;
+}
+
+.profile-info .info-row .toggle__input:checked + .toggle__switch::before {
+  content: '\f06e';
+  transform: translateX(
+    calc(
+      var(--toggle-width) - var(--toggle-info-circle-size) - 2 *
+        var(--toggle-padding)
+    )
+  );
+}
+
+@media (min-width: 768px) {
+  .profile-overview {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-overview .profile-stats {
+    width: 250px;
+  }
+
+  .profile-overview .profile-info {
+    flex: 1;
+    border-left: 1px solid #eee;
+  }
+
+  .profile-overview .profile-info .info-row {
+    justify-content: flex-start;
+  }
+}
+/* End Profile */
