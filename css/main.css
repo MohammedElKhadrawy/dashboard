@@ -919,4 +919,14 @@ main {
     justify-content: flex-start;
   }
 }
+
+.my-skills .skills-row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+  .my-skills .skills-row {
+    justify-content: flex-start;
+  }
+}
 /* End Profile */
