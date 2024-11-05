@@ -929,4 +929,21 @@ main {
     justify-content: flex-start;
   }
 }
+
+.latest-activities .activity:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+  .latest-activities .activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .latest-activities .activity__details {
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+}
 /* End Profile */
