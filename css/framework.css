@@ -384,6 +384,10 @@
 /* End Width + Height */
 
 /* Start Compound Classes */
+.grid-fluid-200 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+}
 .grid-fluid-300 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));

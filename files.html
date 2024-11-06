@@ -114,6 +114,555 @@
         <section class="main-content py-20">
           <div class="main-container">
             <h1 class="main-title">Files</h1>
+
+            <div class="files-page-wrapper flex flex-col gap-fluid">
+              <div class="files-statistics card">
+                <h2 class="mobile-text-center mb-15">Files Statistics</h2>
+
+                <div class="grid gap-15 fs-13">
+                  <div
+                    class="stat border-eee rounded-6 p-10 flex items-center gap-10"
+                  >
+                    <i
+                      class="stat__icon blue fa-solid fa-file-pdf fa-lg flex-center text-blue"
+                    ></i>
+                    <div class="flex-1">
+                      <span>PDF Files</span>
+                      <span class="block text-grey mt-5">130 Files</span>
+                    </div>
+                    <span class="text-grey">6.5GB</span>
+                  </div>
+
+                  <div
+                    class="stat border-eee rounded-6 p-10 flex items-center gap-10"
+                  >
+                    <i
+                      class="stat__icon green fa-solid fa-image fa-lg flex-center text-green"
+                    ></i>
+                    <div class="flex-1">
+                      <span>Images</span>
+                      <span class="block text-grey mt-5">115 Files</span>
+                    </div>
+                    <span class="text-grey">3.5GB</span>
+                  </div>
+
+                  <div
+                    class="stat border-eee rounded-6 p-10 flex items-center gap-10"
+                  >
+                    <i
+                      class="stat__icon red fa-solid fa-file-word fa-lg flex-center text-red"
+                    ></i>
+                    <div class="flex-1">
+                      <span>Word Files</span>
+                      <span class="block text-grey mt-5">110 Files</span>
+                    </div>
+                    <span class="text-grey">3.2GB</span>
+                  </div>
+
+                  <div
+                    class="stat border-eee rounded-6 p-10 flex items-center gap-10"
+                  >
+                    <i
+                      class="stat__icon orange fa-solid fa-file-csv fa-lg flex-center text-orange"
+                    ></i>
+                    <div class="flex-1">
+                      <span>CSV Files</span>
+                      <span class="block text-grey mt-5">99 Files</span>
+                    </div>
+                    <span class="text-grey">2.9GB</span>
+                  </div>
+
+                  <a
+                    class="stats__upload-btn text-white bg-blue py-10 px-15 rounded-6"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angles-up mr-10"></i>Upload</a
+                  >
+                </div>
+              </div>
+
+              <div class="files-container grid-fluid-200 gap-fluid">
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/pdf.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.pdf</div>
+                    <p class="fs-13 text-grey">Ethan</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>20/06/2020</span>
+                    <span>5.5MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/avi.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.avi</div>
+                    <p class="fs-13 text-grey">Admin</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>12.5MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/eps.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.eps</div>
+                    <p class="fs-13 text-grey">Samuel</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>2.7MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/psd.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.psd</div>
+                    <p class="fs-13 text-grey">James</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>15.1MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/dll.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.dll</div>
+                    <p class="fs-13 text-grey">Andrew</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>2.2MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/png.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.png</div>
+                    <p class="fs-13 text-grey">Ethan</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>1.1MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/dll.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.dll</div>
+                    <p class="fs-13 text-grey">Andrew</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>2.2MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/png.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.png</div>
+                    <p class="fs-13 text-grey">Ethan</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>1.1MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/psd.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.psd</div>
+                    <p class="fs-13 text-grey">James</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>15.1MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/pdf.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.pdf</div>
+                    <p class="fs-13 text-grey">Ethan</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>5.5MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/avi.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.avi</div>
+                    <p class="fs-13 text-grey">Admin</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>12.5MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/eps.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.eps</div>
+                    <p class="fs-13 text-grey">Samuel</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>2.7MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/pdf.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.pdf</div>
+                    <p class="fs-13 text-grey">Ethan</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>5.5MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/avi.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.avi</div>
+                    <p class="fs-13 text-grey">Admin</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>12.5MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/eps.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.eps</div>
+                    <p class="fs-13 text-grey">Samuel</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>2.7MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/psd.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.psd</div>
+                    <p class="fs-13 text-grey">James</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>15.1MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/dll.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.dll</div>
+                    <p class="fs-13 text-grey">Andrew</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>2.2MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/png.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.png</div>
+                    <p class="fs-13 text-grey">Ethan</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>1.1MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/dll.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.dll</div>
+                    <p class="fs-13 text-grey">Andrew</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>2.2MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/png.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.png</div>
+                    <p class="fs-13 text-grey">Ethan</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>1.1MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/psd.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.psd</div>
+                    <p class="fs-13 text-grey">James</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>15.1MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/pdf.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.pdf</div>
+                    <p class="fs-13 text-grey">Ethan</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>5.5MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/avi.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.avi</div>
+                    <p class="fs-13 text-grey">Admin</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>12.5MB</span>
+                  </div>
+                </div>
+
+                <div class="file bg-white rounded-10 p-10 relative">
+                  <i
+                    class="file__download fa-solid fa-download absolute text-grey"
+                  ></i>
+                  <div class="grid gap-15 mb-10">
+                    <img
+                      class="file__img"
+                      src="assets/eps.svg"
+                      alt=""
+                      width="64"
+                    />
+                    <div class="fs-14 text-center">my-file.eps</div>
+                    <p class="fs-13 text-grey">Samuel</p>
+                  </div>
+                  <div class="file__info fs-13 text-grey flex-between pt-10">
+                    <span>16/5/2021</span>
+                    <span>2.7MB</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <!-- End Main Content -->
