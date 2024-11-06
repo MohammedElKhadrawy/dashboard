@@ -337,10 +337,16 @@
 .fs-15 {
   font-size: 0.9375rem;
 }
+.fs-base {
+  font-size: 1rem;
+}
 .fs-25 {
   font-size: 1.5625rem;
 }
 
+.fw-normal {
+  font-weight: normal;
+}
 .fw-bold {
   font-weight: bold;
 }

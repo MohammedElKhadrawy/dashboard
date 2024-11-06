@@ -352,10 +352,6 @@ main {
   margin: 0 auto 0.625rem;
 }
 
-.latest-news .news-row .news__info h3 {
-  font-size: 1rem;
-}
-
 .latest-news .news-row .news__time {
   margin: 0 auto;
 }
@@ -367,7 +363,7 @@ main {
   }
 
   .latest-news .news-row img {
-    margin: 0 1rem 0 0;
+    margin: 0 0.9375rem 0 0;
   }
 
   .latest-news .news-row .news__info,
@@ -394,10 +390,6 @@ main {
   text-decoration: line-through;
 }
 
-.latest-tasks .task-row .task__info h3 {
-  font-size: 1rem;
-}
-
 .latest-tasks .task-row:not(.done) .delete {
   cursor: pointer;
   transition: color 0.3s;
@@ -411,11 +403,6 @@ main {
 /* Start Latest Uploads Widget */
 .latest-uploads .upload-row:not(:last-child) {
   border-bottom: 1px solid #eee;
-}
-
-.latest-uploads .upload-row .upload__info h3 {
-  font-weight: normal;
-  font-size: 1rem;
 }
 /* End Latest Uploads Widget */
 
@@ -472,10 +459,6 @@ main {
 /* End Last Project Progress Widget */
 
 /* Start Reminders Widget */
-.reminders .reminders__list {
-  gap: 1rem;
-}
-
 .reminders__list li .bullet {
   width: 15px;
   height: 15px;
@@ -499,10 +482,6 @@ main {
 /* End Reminders Widget */
 
 /* Start Latest Post Widget */
-.latest-post .post__head h3 {
-  font-size: 1rem;
-}
-
 .latest-post .post__content {
   line-height: 1.8;
   text-transform: capitalize;
@@ -962,11 +941,6 @@ main {
   right: 0.625rem;
 }
 
-.project__title {
-  font-size: 1rem;
-  font-weight: normal;
-}
-
 .project__team {
   padding-top: 1.875rem;
 }
@@ -1049,10 +1023,6 @@ main {
   object-fit: cover;
 }
 
-.course__title {
-  font-size: 1rem;
-}
-
 .course__description {
   line-height: 1.6;
 }
@@ -1087,10 +1057,6 @@ main {
 
 .friend__img {
   margin: 0.625rem auto;
-}
-
-.friend__name {
-  font-size: 1rem;
 }
 
 .friend__stats {
