@@ -192,12 +192,6 @@ main {
 }
 /* End Main Title */
 
-/* Start Grid Wrapper */
-.main-content .wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 450px), 1fr));
-}
-/* End Grid Wrapper */
-
 /* Start Welcome Widget */
 .welcome {
   overflow: hidden;
@@ -1039,10 +1033,6 @@ main {
 /* End Projects */
 
 /* Start Courses */
-.courses-page-wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
-}
-
 .course {
   overflow: hidden;
 }
@@ -1079,10 +1069,6 @@ main {
 /* End Courses */
 
 /* Start Friends */
-.friends-page-wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
-}
-
 .friend__contact {
   color: #666;
   top: 0.625rem;
@@ -1120,7 +1106,7 @@ main {
   transform: translateY(-50%);
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .friend__info {
     flex-direction: row;
     justify-content: space-between;

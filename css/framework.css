@@ -378,6 +378,14 @@
 /* End Width + Height */
 
 /* Start Compound Classes */
+.grid-fluid-300 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+.grid-fluid-450 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 450px), 1fr));
+}
 .flex-center {
   display: flex;
   justify-content: center;
