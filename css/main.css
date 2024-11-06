@@ -1077,3 +1077,54 @@ main {
   transform: translate(-50%, -50%);
 }
 /* End Courses */
+
+/* Start Friends */
+.friends-page-wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+
+.friend__contact {
+  color: #666;
+  top: 0.625rem;
+  left: 0.625rem;
+}
+
+.friend__contact i {
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.friend__contact i:hover {
+  color: #fff;
+  background-color: var(--clr-blue);
+}
+
+.friend__img {
+  margin: 0.625rem auto;
+}
+
+.friend__name {
+  font-size: 1rem;
+}
+
+.friend__stats {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.friend__stats .vip-badge {
+  font-size: 2.5rem;
+  opacity: 0.2;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width:768px) {
+  .friend__info {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.3125rem;
+  }
+}
+/* End Friends */
