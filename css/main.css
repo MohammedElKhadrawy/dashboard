@@ -1156,3 +1156,44 @@ main {
   }
 }
 /* End Files */
+
+/* Start Plans */
+.plan__head {
+  padding: 3px;
+  border: 3px solid;
+}
+
+.plan__head.green {
+  border-color: var(--clr-green);
+}
+
+.plan__head.blue {
+  border-color: var(--clr-blue);
+}
+
+.plan__head.orange {
+  border-color: var(--clr-orange);
+}
+
+.plan__head .head__price {
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+.plan__head .head__price .price__currency {
+  top: 0;
+  left: -20px;
+}
+
+.plan__benefits li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.plan__benefits .benefit__status {
+  font-size: 1.125rem;
+}
+
+.plan__benefits .benefit__info {
+  cursor: pointer;
+}
+/* End Plans */
