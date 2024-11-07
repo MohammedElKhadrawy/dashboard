@@ -10,11 +10,11 @@ This project is a **responsive multipage dashboard template** created using **HT
 
 ## Features
 
-- Responsive Layout: Built using CSS Grid and Flexbox for a fluid and adaptable design across all screen sizes.
-- Mobile-first Design: Optimized for mobile devices with smooth scaling to larger screens.
-- Custom CSS Framework: Manually implemented CSS framework focusing on utility classes, grid systems, and reusable components.
-- Sidebar Navigation: A sidebar that collapses for smaller screens to enhance usability.
-- Modern UI: Clean and modern interface, easily customizable for various dashboard styles.
+- **Responsive Layout:** Built using CSS Grid and Flexbox for a fluid and adaptable design across all screen sizes.
+- **Mobile-first Design:** Optimized for mobile devices with smooth scaling to larger screens.
+- **Custom CSS Framework:** Manually implemented CSS framework focusing on utility classes, grid systems, and reusable components.
+- **Sidebar Navigation:** A sidebar that collapses for smaller screens to enhance usability.
+- **Modern UI:** Clean and modern interface, easily customizable for various dashboard styles.
 
 ## Getting Started
 
