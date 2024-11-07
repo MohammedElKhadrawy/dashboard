@@ -202,7 +202,7 @@ main {
 }
 
 .welcome .avatar {
-  margin: -32.5px auto 0; /* half of its height */
+  margin-top: -32.5px; /* half of its height */
   border: 4px solid #fff;
   border-radius: 50%;
   box-shadow: 0 0 5px #ddd;
@@ -346,14 +346,6 @@ main {
 /* Start Latest News Widget */
 .latest-news .news-row:not(:last-child) {
   border-bottom: 1px solid #eee;
-}
-
-.latest-news .news-row img {
-  margin: 0 auto 0.625rem;
-}
-
-.latest-news .news-row .news__time {
-  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -825,17 +817,12 @@ main {
   overflow: hidden;
 }
 
-.profile-stats .profile__avatar {
-  margin: 0 auto 0.625rem;
-}
-
 .profile-stats .profile__name {
   font-size: 1.17rem;
 }
 
 .profile-stats .profile__progressbar {
   max-width: 180px;
-  margin: 0 auto 0.625rem;
 }
 
 .profile-stats .profile__progressbar .progressbar__fill {
@@ -1055,10 +1042,6 @@ main {
   background-color: var(--clr-blue);
 }
 
-.friend__img {
-  margin: 0.625rem auto;
-}
-
 .friend__stats {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -1129,7 +1112,6 @@ main {
 }
 
 .file__img {
-  margin: 1.25rem auto 0;
   transition: transform 0.3s;
 }
 
@@ -1177,7 +1159,6 @@ main {
 
 .plan__head .head__price {
   font-size: 2.5rem;
-  margin: 0 auto;
 }
 
 .plan__head .head__price .price__currency {

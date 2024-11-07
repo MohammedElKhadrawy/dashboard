@@ -258,6 +258,11 @@
 .ml-25 {
   margin-left: 1.5625rem;
 }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* End Spacing */
 
 /* Start Colors */
