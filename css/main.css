@@ -149,7 +149,10 @@ main {
 }
 
 .main-header .header__search input:focus {
-  width: 200px;
+  /* to avoid overflow */
+  /* important note: parent has to have flex-1 class in order for this trick to work */
+  /* otherwise it just takes the width of its content as is the nature of flex items, so width 100% won't work */
+  width: min(100%, 200px);
 }
 
 .main-header .header__search input:focus::placeholder {
